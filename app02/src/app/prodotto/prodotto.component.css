@@ -1,0 +1,26 @@
+.card {
+  width: 25%;
+  border: 2px solid dodgerblue;
+  border-radius: 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.card > img {
+  width: 100%;
+}
+.card > p {
+  text-align: right;
+  font-weight: bold;
+}
+h3,
+h4 {
+  margin: 0;
+}
+h3 {
+  color: darksalmon;
+  letter-spacing: 0.1em;
+}
+.card > p::before {
+  content: "€. ";
+}
