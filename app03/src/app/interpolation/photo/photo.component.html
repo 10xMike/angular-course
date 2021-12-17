@@ -1,0 +1,15 @@
+<section>
+  <p>{{ foto.id }}</p>
+  <p># {{ foto.albumId }}</p>
+  <p>
+    Clicca
+    <a href="{{ foto.url }}"
+      ><img
+        src="{{ foto.thumbnailUrl }}"
+        alt="{{ foto.title }}"
+        title="{{ foto.title }}"
+    /></a>
+    per venire reindirizzato alla foto
+  </p>
+  <p>{{ foto.title }}</p>
+</section>

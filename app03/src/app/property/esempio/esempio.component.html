@@ -1,0 +1,17 @@
+<h3>Immagine</h3>
+<img [src]="percorsoImg" [alt]="altImg" />
+
+<h3>Collegamenti</h3>
+<a [href]="percorsoLink">La Stampa!</a>
+
+<h3>Contenuto interno di un tag</h3>
+<p [innerHTML]="contenutoParagrafo">contenuto iniziale</p>
+<p>Peso pacco regalo: <span [innerHTML]="peso">0</span>Kg</p>
+
+<h3>Toggle</h3>
+<input type="text" [disabled]="bloccato" />
+<button [disabled]="bloccato">Prova</button>
+
+<h3>Stile</h3>
+<p [style]="stiletesto">Lorem ipsum dolor sit amet.</p>
+<p [class]="classeTesto">paragrafo evidenziato</p>

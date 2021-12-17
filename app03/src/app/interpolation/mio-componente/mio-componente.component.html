@@ -1,0 +1,24 @@
+<p>String interpolation</p>
+<h3>contenuto da attributo a tag</h3>
+<p>{{ nome || "Utente" }}</p>
+<p>
+  Benvenuto <span>{{ nome }}</span>
+</p>
+
+<p>Prezzo: {{ prezzo }}</p>
+<p>Numero pezzi: {{ numeroPezzi }}</p>
+<p>Prezzo totale: {{ prezzo * numeroPezzi }}</p>
+
+<h3>Chiamata di metodi:</h3>
+<p>Nominativo: {{ nome!.charAt(0) + " " + cognome.toUpperCase() }}</p>
+
+<h3>Date</h3>
+<p>Data di oggi: {{ oggi }}</p>
+<p>Data di oggi: {{ oggi.toLocaleDateString() }}</p>
+<p>Ora attuale: {{ oggi.toLocaleTimeString() }}</p>
+
+<h3>Percorsi</h3>
+<p>Collegamento: {{ link }}</p>
+<p>Clicca <a href="{{ link }}">qui</a> per andare su Google</p>
+<p>Immagine: {{ immagine }}</p>
+<img src="{{ immagine }}" alt="PS5" />
