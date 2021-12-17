@@ -1,0 +1,13 @@
+/*
+input.ng-touched, select.ng-touched, textarea.ng-touched{
+  background-color: cadetblue;
+}
+
+.ng-dirty:not(form) {
+  background-color: chartreuse;
+}
+
+.ng-invalid:not(form) {
+  outline: 2px dotted red;
+}
+ */
