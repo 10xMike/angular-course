@@ -1,0 +1,17 @@
+<h2>Gestione dei libri</h2>
+<p>Elenco dei libri:</p>
+
+<div *ngIf="libroSelezionato">
+  <h3>Selezionato libro {{ libroSelezionato.codice }}</h3>
+  <ul>
+    <li><input type="text" [(ngModel)]="libroSelezionato.titolo" /></li>
+    <li><input type="text" [(ngModel)]="libroSelezionato.autore" /></li>
+    <li><input type="text" [(ngModel)]="libroSelezionato.anno" /></li>
+  </ul>
+</div>
+
+<app-libro
+  *ngFor="let libro of libri"
+  [datiLibro]="libro"
+  (selezionato)="recuperaSelezione($event)"
+></app-libro>
