@@ -1,0 +1,11 @@
+.container {
+  border: 2px solid darkseagreen;
+}
+
+.row {
+  border: 2px solid crimson;
+}
+
+.col {
+  border: 2px solid cyan;
+}

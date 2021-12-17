@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Alert</h2>
+
+  <h3>Semplice</h3>
+  <div class="alert alert-warning">
+    Testo interno all'alert
+  </div>
+
+  <h3>Con contenuti multipli</h3>
+  <div class="alert alert-warning">
+    <h4 class="alert-heading">Intestazione</h4>
+    <p>Testo interno</p>
+    <p>
+      <a href="" class="alert-link">clicca</a>
+    </p>
+  </div>
+
+  <h3>Alert dinamico</h3>
+  <div [ngClass]="alert">alert dinamico</div>
+  <h4>Dati del prodotto xxx</h4>
+  <p>
+    pezzi: {{pezzi}}
+  </p>
+  <button (click)="compra()" class="btn btn-dark">compra</button>
+</div>
