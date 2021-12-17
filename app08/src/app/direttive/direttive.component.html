@@ -1,0 +1,87 @@
+<h2>Direttive di attributo</h2>
+
+<h3>ngStyle</h3>
+<p>
+  Esempio con property binding [style]
+  <span [style]="stileUno">testo di prova</span>
+</p>
+
+<p>
+  Esempio con property binding [style.proprietà]
+  <span [style.color]="coloreUno">testo di prova</span>
+</p>
+
+<p>Elenco dei nomi con property binding [style.proprietà]</p>
+<ul>
+  <li *ngFor="let n of nomi" [style.color]="n.length < 6 ? 'blue' : 'red'">
+    {{ n }}
+  </li>
+</ul>
+
+<p>
+  Esempio con ngStyle [ngStyle]
+  <span [ngStyle]="stileDue">testo di prova</span>
+</p>
+
+<p>Elenco dei nomi con ngStyle [ngStyle]</p>
+<ul>
+  <li
+    *ngFor="let n of nomi"
+    [ngStyle]="{ color: n.length < 6 ? 'blue' : '', 'font-style': 'italic' }"
+  >
+    {{ n }}
+  </li>
+</ul>
+
+<p>Elenco dei nomi con ngStyle e chiamata metodo [ngStyle]</p>
+<ul>
+  <li *ngFor="let n of nomi" [ngStyle]="getStyle(n)">
+    {{ n }}
+  </li>
+</ul>
+
+<h3>ngClass</h3>
+<p>
+  Esempio con property binding [class]
+  <span [ngClass]="classeUno">testo di prova</span>
+</p>
+
+<p>Elenco dei nomi con property binding [Class]</p>
+<ul>
+  <li *ngFor="let n of nomi" [class.evidenziato]="n.length < 6">
+    {{ n }}
+  </li>
+</ul>
+
+<p>
+  Esempio con ngClass e un array di classi [ngClass]
+  <span [ngClass]="classeDue">testo di prova</span>
+</p>
+
+<p>Elenco con ngClass [ngClass]</p>
+<ul>
+  <li
+    *ngFor="let n of nomi"
+    [ngClass]="{ evidenziato: n.charAt(0) == 'A', sottolineato: n.length == 4 }"
+  >
+    {{ n }}
+  </li>
+</ul>
+
+<p>Elenco con ngClass [ngClass]</p>
+<ul>
+  <li *ngFor="let n of nomi" [ngClass]="getClasses()">
+    {{ n }}
+  </li>
+</ul>
+
+<p>
+  Esempio con [ngClass]
+  <span [ngClass]="oggettoClassi">testo di prova</span>
+  <!-- ngClass oggettoClassi -->
+  <button (click)="evidenzia()">evidenzia</button>
+  <!-- click evidenzia() -->
+  <button>sottolinea</button>
+  <!-- click sottolinea() -->
+</p>
+
