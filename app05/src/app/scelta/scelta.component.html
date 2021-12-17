@@ -1,0 +1,29 @@
+<h2>Direttive di scelta</h2>
+<h3>ngIf</h3>
+<p>Qui sotto c'è un paragrafo visibile se true</p>
+<p *ngIf="visibile">Visibile</p>
+
+<p>Nascosto se false</p>
+<p *ngIf="!nascosto">Nascosto</p>
+
+<p>Numero, avviso se maggiore di 5</p>
+<p *ngIf="numero > 5">Numero {{ numero }} maggiore di 5</p>
+
+<p>Mostra componente se 'mostraComp' è vero</p>
+<app-componente *ngIf="mostraComp"></app-componente>
+
+<div *ngIf="persona">
+    <p>Dati della persona</p>
+    <p>Nome: {{ persona.nome }}</p>
+    <p>Cognome: {{ persona.nome }}</p>
+    <p>Anni: {{ persona.nome }}</p>
+</div>
+<!-- truthy & falsy values -->
+<h3>ngSwitch</h3>
+<p [ngSwitch]="colore">
+    <span *ngSwitchCase="'blu'">mare</span>
+    <span *ngSwitchCase="'giallo'">sole</span>
+    <span *ngSwitchCase="'nero'">notte</span>
+    <span *ngSwitchDefault>Colore</span>
+</p>
+

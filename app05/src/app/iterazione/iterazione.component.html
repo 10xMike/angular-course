@@ -1,0 +1,17 @@
+<h2>iterazione!</h2>
+<p>elenco colori</p>
+<ul>
+  <li *ngFor="let c of colori">colore: {{ c }}</li>
+</ul>
+
+<p>Indice colori</p>
+<ul>
+  <li *ngFor="let c of colori; let i = index">
+    colore: {{ c }} in posizione {{ i }}
+  </li>
+</ul>
+
+<p>Oggetti di tipo persona</p>
+<ol>
+    <li *ngFor="let p of persone">{{p.nome}}, {{p.cognome}}</li>
+</ol>
