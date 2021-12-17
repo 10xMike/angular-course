@@ -1,0 +1,21 @@
+<h2>Elenco Post</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>title</th>
+      <th>operazioni</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of posts">
+      <td>{{p.id}}</td>
+      <td>{{p.title}}</td>
+      <td>
+        <a routerLink="/posts/{{p.id}}">dettagli</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
