@@ -1,0 +1,6 @@
+<h2>Elenco atleti</h2>
+<ul>
+  <li *ngFor="let a of elencoAtleti">
+    <a routerLink="/atleti/{{a.id}}">{{ a.id }} - {{ a.cognome + " " + a.nome }}</a>
+  </li>
+</ul>
