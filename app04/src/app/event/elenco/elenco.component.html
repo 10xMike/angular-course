@@ -1,0 +1,22 @@
+<h3>Elenco eventi</h3>
+<h4>Eventi del mouse</h4>
+<p
+  class="test"
+  (click)="(onClick)"
+  (mouseover)="onMouseOver()"
+  (mouseout)="onMouseOut()"
+>
+  Test Area
+</p>
+<div [innerHTML]="display"></div>
+
+<h4>Eventi su elementi form</h4>
+<p>
+  <input
+    type="text"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+    (input)="onInput($event)"
+  />
+  Nome
+</p>
